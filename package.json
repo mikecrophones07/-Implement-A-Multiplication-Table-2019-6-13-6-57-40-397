@@ -1,0 +1,22 @@
+{
+  "name": "echonmi-multiplication-table",
+  "version": "1.0.0",
+  "description": "Please read the following requirement:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikecrophones07/-Implement-A-Multiplication-Table-2019-6-13-6-57-40-397.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikecrophones07/-Implement-A-Multiplication-Table-2019-6-13-6-57-40-397/issues"
+  },
+  "homepage": "https://github.com/mikecrophones07/-Implement-A-Multiplication-Table-2019-6-13-6-57-40-397#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}

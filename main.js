@@ -13,10 +13,10 @@ function range(start, end) {
 function formulateRangeLogic(start, end){
     let resultString = [];
 
-    if (isValidateRange(start, end) === null){
+    if (isStartLessthanEnd(start, end) === null){
         return null;
     }
-    else if(isValidateRange(start, end) && isValidParameters(start, end)){
+    else if(isValidateRange(start, end) && isStartLessthanEnd(start, end)){
         for(tempEnd = end; tempEnd >= start; tempEnd--){
             let tempInitialResult = [];
             for(tempStart = start; tempStart <= tempEnd; tempStart++){
@@ -44,13 +44,11 @@ function formatString(multiplicationTable){
     return finalStringResult.substring(0, finalStringResult.length-1);
 }
 
-function isValidParameters(start, end){
+function isStartLessthanEnd(start, end){
     if(start <= end){
         return true;
     }
-    else{
-        return null;
-    }
+    return null;
 }
 
 function isValidateRange(start, end){
@@ -62,7 +60,7 @@ function getRangeBoolCondition(number){
 }
 
 module.exports = {
-    validateParameters: isValidParameters,
+    validateParameters: isStartLessthanEnd,
     validateRange:isValidateRange,
     generateMultiplicationTable:generateMultiplicationTable
 };
